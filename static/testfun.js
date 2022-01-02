@@ -1,7 +1,7 @@
 function testfun(){
 const date = new Date(Date.now());
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let x = axios.post('REPLACE WITH URL FOR LOGIC APP', {
+let x = axios.post('https://remrevbuttonpush.azurewebsites.net', {
     id: self.crypto.randomUUID(),
     month: months[date.getMonth()],
     day: date.getDate(),
