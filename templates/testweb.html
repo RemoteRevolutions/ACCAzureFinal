@@ -14,7 +14,7 @@
   <button onClick="window.location.href=window.location.href">Click to refresh page</button>
   <HR>
   {% for time in data %}
-    <p>Date: {{time.month}}, {{time.day}} {{time.year}}, {{time.hour}}:{{time.minute}}:{{time.second}}</p>
+    <p>Date: {{time.month}}-{{time.day}}-{{time.year}}, {{time.hour}}:{{time.minute}}:{{time.second}}</p>
   {% endfor %}
   <script src='{{url_for("static", filename="testfun.js")}}'></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js">
