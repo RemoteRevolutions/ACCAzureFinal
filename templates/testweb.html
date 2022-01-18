@@ -15,7 +15,7 @@
   <HR>
   {% for time in data %}
     <p>
-      Date and Time {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} [] 
+      Date and Time: {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} [] 
     </p>
   {% endfor %}
   <script src='{{url_for("static", filename="testfun.js")}}'></script>
