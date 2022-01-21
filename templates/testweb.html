@@ -13,7 +13,7 @@
   <button onclick="testfun()">Click to add to Cosmos DB</button> <br><br>
   <button onClick="window.location.href=window.location.href">Click to refresh page</button>
   <HR>
-  {% for time in data[::-] %}
+  {% for time in data %}
     <p>
       Date and Time: {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} [] 
     </p>
