@@ -27,7 +27,7 @@ def home():
 
     finally:
         print("\nrun_sample done")
-    return render_template('testweb.html', data=list(data))
+    return render_template('testweb.html', data)
 
 if __name__ == '__main__':
     app.run()
