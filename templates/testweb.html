@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylsheet" href='{{url_for("static", filename="home.css")}}'>
-    <title>Document</title>
+    <title>Azure button click project using Cosmos DB</title>
 </head>
 <body>
-  <button onclick="testfun()">Click Me</button>
+  <A HREF="https://remoterevolutionsportfolio.com/">RETURN TO PORTFOLIO SITE MAIN PAGE</A> <br>
+  <HR>
+  <button onclick="testfun()">Click to add to Cosmos DB</button> <br><br>
+  <button onClick="window.location.href=window.location.href">Click to refresh page</button>
+  <HR>
   {% for time in data %}
-    <p>Date: {{time.month}}, {{time.day}} {{time.year}}, {{time.hour}}:{{time.minute}}:{{time.second}}</p>
+    <p>
+      Date and Time {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} [] 
+    </p>
   {% endfor %}
   <script src='{{url_for("static", filename="testfun.js")}}'></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js">
