@@ -14,6 +14,8 @@ let x = axios.post('https://prod-68.eastus.logic.azure.com:443/workflows/5de3736
   .then(function (response) {
     console.log(response);
     return response.data
-  });}
+  });
+location.reload(); // Attempt to refresh page upon adding entr to database.
+}
 
 console.log(x);
