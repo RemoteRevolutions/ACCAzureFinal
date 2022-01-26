@@ -12,11 +12,12 @@ let x = axios.post('https://prod-21.eastus.logic.azure.com:443/workflows/2f223ec
   })
   .then(function (response) {
     console.log(response);
+    window.location.reload();
     return response.data
   });
 
 console.log(x);
-window.location.reload();
+
 }
 
 
