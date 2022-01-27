@@ -18,7 +18,7 @@
   <HR>
   {% for time in data|reverse %}
     <p>
-      Date and Time: {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} 
+      [{{loop.index}}] Date and Time: {{time.month}} {{time.day}}, {{time.year}}. {{time.hour}}:{{time.minute}}:{{time.second}} 
     </p>
   {% endfor %}
   <script src='{{url_for("static", filename="testfun.js")}}'></script>
